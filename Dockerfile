@@ -1,4 +1,8 @@
-FROM python:latest
+FROM python:3.10-bullseye
+
+# Install required libraries
+RUN apt-get update && apt-get install -y \
+    firefox-esr
 
 # set the working directory
 WORKDIR /app

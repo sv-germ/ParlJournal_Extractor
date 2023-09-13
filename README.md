@@ -17,8 +17,8 @@ uvicorn main:app --host 0.0.0.0 --port 8080 --reload
 Build and run the Docker image locally, as follows:
 
 ```
-docker build -t channel-api .
-docker run -d -p 8080:80 channel-api
+docker build -t parl-journal-extractor .
+docker run -d -p 8080:80 parl-journal-extractor
 ```
 
 In order to run the example server with docker compose, use this:
